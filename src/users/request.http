@@ -1,0 +1,10 @@
+@url = http://localhost:3001
+
+### Create a new user
+POST {{url}}/auth/signup
+content-type: application/json
+
+{
+    "email": "ccc@ddddd.com",
+    "password": "wwwwwww"
+}
