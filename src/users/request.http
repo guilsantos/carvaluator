@@ -8,3 +8,24 @@ content-type: application/json
     "email": "ccc@ddddd.com",
     "password": "wwwwwww"
 }
+
+### Find a particular user with a given ID
+GET {{url}}/auth/1
+
+### Find all users with a given email
+GET {{url}}/auth?email=ccc@ddddd.com
+
+### Find all users
+GET {{url}}/auth
+
+### Delete a user with a given id
+DELETE {{url}}/auth/2
+
+### Update a user
+PATCH {{url}}/auth/3123213
+content-type: application/json
+
+{
+    "email": "aaa@bcd.com.br",
+    "password": "Peperoni"
+}
