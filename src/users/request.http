@@ -5,8 +5,17 @@ POST {{url}}/auth/signup
 content-type: application/json
 
 {
-    "email": "ccc@ddddd.com",
+    "email": "ccc@aaaaa.com",
     "password": "wwwwwww"
+}
+
+### Signin a new user
+POST {{url}}/auth/signin
+content-type: application/json
+
+{
+    "email": "ccc@aaaaa.com",
+    "password": "wwwwwwwa"
 }
 
 ### Find a particular user with a given ID
