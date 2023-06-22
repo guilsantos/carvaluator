@@ -15,7 +15,7 @@ content-type: application/json
 
 {
     "email": "ccc@aaaaa.com",
-    "password": "wwwwwwwa"
+    "password": "wwwwwww"
 }
 
 ### Find a particular user with a given ID
@@ -38,3 +38,9 @@ content-type: application/json
     "email": "aaa@bcd.com.br",
     "password": "Peperoni"
 }
+
+### Set a color
+GET {{url}}/auth/colors/red
+
+### Get a color
+GET {{url}}/auth/colors
