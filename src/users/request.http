@@ -5,7 +5,7 @@ POST {{url}}/auth/signup
 content-type: application/json
 
 {
-    "email": "ccc@aaaaa.com",
+    "email": "cccc@aaaaa.com",
     "password": "wwwwwww"
 }
 
@@ -14,9 +14,16 @@ POST {{url}}/auth/signin
 content-type: application/json
 
 {
-    "email": "ccc@aaaaa.com",
+    "email": "cccc@aaaaa.com",
     "password": "wwwwwww"
 }
+
+### Signou a new user
+POST {{url}}/auth/signout
+content-type: application/json
+
+### Get the currently signed in user
+GET {{url}}/auth/whoami
 
 ### Find a particular user with a given ID
 GET {{url}}/auth/1
@@ -38,9 +45,3 @@ content-type: application/json
     "email": "aaa@bcd.com.br",
     "password": "Peperoni"
 }
-
-### Set a color
-GET {{url}}/auth/colors/red
-
-### Get a color
-GET {{url}}/auth/colors
